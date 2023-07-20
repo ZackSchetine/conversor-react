@@ -4,8 +4,9 @@ import DropDown from './dropDown';
 const itemList = ['km/h para m/s', 'm/s para km/h'];
 
 export default function ConvVelocidade() {
-    const num = 20;
+    const num = 10.8;
     const value = 3.6;
+    let result = 0;
 
     const [selectedOption, setSelectedOption] = React.useState(null);
 
@@ -18,7 +19,7 @@ export default function ConvVelocidade() {
     const renderSelectedComponent = () => {
         switch (selectedOption) {
             case itemList[0]:
-                const result = num * value;
+                result = num * value;
                 return (
                     <div>
                         <h3> km/h -- m/s </h3>
@@ -37,7 +38,14 @@ export default function ConvVelocidade() {
                     </div >
                 );
             case itemList[1]:
-                return <h3> m/s -- km/h </h3>;
+                result = num / value;
+                return (
+                    <div>
+                        <h3> m/s -- km/h </h3>
+                        <br />
+                        <span>{result}</span>
+                    </div>
+                );
             default:
                 return null;
         }
@@ -48,7 +56,6 @@ export default function ConvVelocidade() {
             <h2>Menu de conversão de velocidade</h2>
             <p>Selecione uma das opções abaixo:</p>
             <DropDown itens={itemList} onSelect={handleOptionSelect} />
-
             {renderSelectedComponent()}
         </div>
     )
