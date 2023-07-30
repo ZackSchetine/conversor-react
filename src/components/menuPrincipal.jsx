@@ -29,7 +29,7 @@ export default function MenuPrincipal() {
 
   return (
     <div>
-      <h1>Conversor de velocidade e temperaturas</h1>
+      <h1>Conversor de velocidade e temperatura</h1>
       <p>Selecione uma das opções abaixo:</p>
       <DropDown itens={itemList} onSelect={handleOptionSelect} />
 

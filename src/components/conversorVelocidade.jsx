@@ -5,7 +5,6 @@ const itemList = ['km/h para m/s', 'm/s para km/h'];
 const SPEED_CONVERSION_FACTOR = 3.6;
 
 export default function ConvVelocidade() {
-    const num = 10.8;
     const [selectedOption, setSelectedOption] = React.useState(null);
     const [inputValue, setInputValue] = React.useState('');
     const [conversionResult, setConversionResult] = React.useState('');
