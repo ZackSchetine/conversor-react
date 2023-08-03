@@ -1,9 +1,9 @@
 import * as React from 'react';
 import './menu.css';
 
-import ConvTemperatura from './conversorTemperatura';
-import ConvVelocidade from './conversorVelocidade';
-import DropDown from './dropDown';
+import ConvTemperatura from './ConversorTemperatura';
+import ConvVelocidade from './ConversorVelocidade';
+import DropDown from './DropDown';
 
 const itemList = ['Conversor de Velocidade', 'Conversor de Temperatura'];
 
@@ -11,7 +11,7 @@ export default function MenuPrincipal() {
   const [selectedOption, setSelectedOption] = React.useState(null);
 
   console.log(selectedOption);
-  
+
   const handleOptionSelect = (option) => {
     setSelectedOption(option);
   };
@@ -32,7 +32,6 @@ export default function MenuPrincipal() {
       <h1>Conversor de velocidade e temperatura</h1>
       <p>Selecione uma das opções abaixo:</p>
       <DropDown itens={itemList} onSelect={handleOptionSelect} />
-
       {renderSelectedComponent()}
     </div>
   );

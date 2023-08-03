@@ -1,5 +1,6 @@
 import * as React from 'react';
-import DropDown from './dropDown';
+import DropDown from './DropDown';
+import ConversorDisplay from './ConversorDisplay';
 
 const itemList = [
   'Celsius para Fahrenheit',
@@ -10,7 +11,6 @@ const itemList = [
 ];
 
 export default function ConvTemperatura() {
-  const num = 20;
   const [selectedOption, setSelectedOption] = React.useState(itemList[0]); // Iniciar com a primeira opção selecionada
   const [inputValue, setInputValue] = React.useState('');
   const [conversionResult, setConversionResult] = React.useState('');
@@ -44,38 +44,18 @@ export default function ConvTemperatura() {
     }
   };
 
-  const renderSelectedComponent = () => {
-    return (
-      <div>
-        <h3>{selectedOption}</h3>
-        <input
-          placeholder='Informe o valor'
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-        />
-        <button type="button" onClick={handleConversion}>Converter</button>
-        {conversionResult && (
-          <span style={{
-            display: 'inline-block',
-            border: '1px solid #ccc',
-            marginTop: '30px',
-            padding: '5px',
-            borderRadius: '4px',
-            backgroundColor: '#f9f9f9',
-            color: '#333',
-            cursor: 'default'
-          }}>{conversionResult}</span>
-        )}
-      </div>
-    );
-  };
-
   return (
     <div>
       <h2>Menu de conversão de temperatura</h2>
       <p>Selecione uma das opções abaixo:</p>
       <DropDown itens={itemList} onSelect={handleOptionSelect} />
-      {renderSelectedComponent()}
+      <ConversorDisplay
+        selectedOption={selectedOption}
+        inputValue={inputValue}
+        setInputValue={setInputValue}
+        handleConversion={handleConversion}
+        conversionResult={conversionResult}
+      />
     </div>
   );
 }
