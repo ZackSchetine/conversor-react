@@ -12,13 +12,9 @@ Importação e Organização de Componentes: Importa e utiliza componentes como 
 
 Resumo das Soft Skills Desenvolvidas:
 
-Colaboração: Indica que o projeto foi desenvolvido por duas pessoas, Eduardo Saat e Zack Schetine, demonstrando habilidades de colaboração e trabalho em equipe.
-
-Comunicação: A comunicação é evidente através do uso de mensagens de console (console.log) para registrar a opção selecionada, e também pela inserção de informações no cabeçalho e rodapé da página.
+Colaboração: projeto foi desenvolvido por duas pessoas, demonstrando habilidades de colaboração e trabalho em equipe.
 
 Resolução de Problemas: A implementação do menu dinâmico usando um switch para renderizar componentes diferentes mostra habilidades de resolução de problemas ao criar uma experiência interativa para o usuário.
-
-Atenção aos Detalhes: A estrutura do projeto, a nomenclatura de variáveis e a organização do código refletem atenção aos detalhes para criar um código legível e bem organizado.
 
 Aprendizado Autônomo: A utilização de hooks do React, como useState, e a criação de lógica para alternar entre componentes refletem a capacidade de aprender novos conceitos por conta própria.
 
