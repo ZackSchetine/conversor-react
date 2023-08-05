@@ -32,10 +32,11 @@ export default function MenuPrincipal() {
       <header>
       <h1>Conversor de velocidade e temperatura</h1>
       </header>
+      <main>
       <p>Selecione uma das opções abaixo:</p>
       <DropDown itens={itemList} onSelect={handleOptionSelect} />
       {renderSelectedComponent()}
-
+      </main>
       <footer>
     <p>Desenvolvido por Eduardo Saat e Zack Schetine</p>
    </footer>
