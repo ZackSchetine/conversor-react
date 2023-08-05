@@ -2,7 +2,7 @@ import * as React from 'react';
 import './menu.css';
 
 import ConvTemperatura from './ConversorTemperatura';
-import ConvVelocidade from './ConversorVelocidad';
+import ConvVelocidade from './ConversorVelocidade';
 import DropDown from './DropDown';
 
 const itemList = ['Conversor de Velocidade', 'Conversor de Temperatura'];
