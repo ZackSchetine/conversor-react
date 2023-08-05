@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+Resumo das Hard Skills Desenvolvidas:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Desenvolvimento em React: O projeto envolve a criação de componentes e a estruturação de uma aplicação web utilizando a biblioteca React.
 
-## Available Scripts
+Tratamento de Estados: Utiliza o hook useState do React para gerenciar o estado da opção selecionada pelo usuário.
 
-In the project directory, you can run:
+Manipulação de Eventos: Implementa a função handleOptionSelect para tratar o evento de seleção de uma opção no componente DropDown.
 
-### `npm start`
+Renderização Condicional: Utiliza a estrutura de decisão switch para renderizar dinamicamente diferentes componentes com base na opção selecionada pelo usuário.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Importação e Organização de Componentes: Importa e utiliza componentes como ConvTemperatura, ConvVelocidade e DropDown para compor a funcionalidade da aplicação.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Resumo das Soft Skills Desenvolvidas:
 
-### `npm test`
+Colaboração: Indica que o projeto foi desenvolvido por duas pessoas, Eduardo Saat e Zack Schetine, demonstrando habilidades de colaboração e trabalho em equipe.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Comunicação: A comunicação é evidente através do uso de mensagens de console (console.log) para registrar a opção selecionada, e também pela inserção de informações no cabeçalho e rodapé da página.
 
-### `npm run build`
+Resolução de Problemas: A implementação do menu dinâmico usando um switch para renderizar componentes diferentes mostra habilidades de resolução de problemas ao criar uma experiência interativa para o usuário.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Atenção aos Detalhes: A estrutura do projeto, a nomenclatura de variáveis e a organização do código refletem atenção aos detalhes para criar um código legível e bem organizado.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Aprendizado Autônomo: A utilização de hooks do React, como useState, e a criação de lógica para alternar entre componentes refletem a capacidade de aprender novos conceitos por conta própria.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O que o Código Realiza e Como:
 
-### `npm run eject`
+O código implementa um menu de seleção de conversores (temperatura e velocidade) em uma aplicação React. Quando a página é carregada, o usuário é recebido com um título e uma instrução para selecionar uma opção. Uma vez que o usuário faz a seleção, o componente DropDown é usado para exibir as opções disponíveis (Conversor de Velocidade e Conversor de Temperatura).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ao selecionar uma opção, o estado selectedOption é atualizado, e a função renderSelectedComponent é chamada para renderizar dinamicamente o componente selecionado abaixo do menu. Isso é realizado usando um switch que corresponde à opção selecionada a um componente específico (ConvVelocidade ou ConvTemperatura).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Por fim, informações sobre os desenvolvedores são exibidas no rodapé da página. A combinação de componentes, manipulação de estados e renderização condicional resulta em um aplicativo de conversão de temperatura e velocidade interativo.
