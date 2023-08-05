@@ -29,10 +29,17 @@ export default function MenuPrincipal() {
 
   return (
     <div>
+      <header>
       <h1>Conversor de velocidade e temperatura</h1>
+      </header>
       <p>Selecione uma das opções abaixo:</p>
       <DropDown itens={itemList} onSelect={handleOptionSelect} />
       {renderSelectedComponent()}
+
+      <footer>
+    <p>Desenvolvido por Eduardo Saat e Zack Schetine</p>
+   </footer>
+
     </div>
   );
 }

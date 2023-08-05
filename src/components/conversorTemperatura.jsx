@@ -11,7 +11,7 @@ const itemList = [
 ];
 
 export default function ConvTemperatura() {
-  const [selectedOption, setSelectedOption] = React.useState(itemList[0]); // Iniciar com a primeira opção selecionada
+  const [selectedOption, setSelectedOption] = React.useState(itemList[0]); 
   const [inputValue, setInputValue] = React.useState('');
   const [conversionResult, setConversionResult] = React.useState('');
 
