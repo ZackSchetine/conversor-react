@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './convVelocidade.css';
 
 export default function Display(props) {
     return (
@@ -11,16 +12,7 @@ export default function Display(props) {
             />
             <button type="button" onClick={props.handleConversion}>Converter</button>
             {props.conversionResult && (
-                <span style={{
-                    display: 'inline-block',
-                    border: '1px solid #ccc',
-                    marginTop: '30px',
-                    padding: '5px',
-                    borderRadius: '4px',
-                    backgroundColor: '#f9f9f9',
-                    color: '#333',
-                    cursor: 'default'
-                }}>{props.conversionResult}</span>
+                <span className='custom-styled-span'>{props.conversionResult}</span>
             )}
         </div>
     );
