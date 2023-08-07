@@ -1,6 +1,7 @@
 import * as React from 'react';
 import DropDown from './DropDown';
 import ConversorDisplay from './ConversorDisplay';
+import { ValidarNumero, ValidarPositivo } from './Validacao';
 
 const itemList = ['km/h para m/s', 'm/s para km/h'];
 const SPEED_CONVERSION_FACTOR = 3.6;
@@ -19,12 +20,16 @@ export default function ConvVelocidade() {
     const handleConversion = () => {
         switch (selectedOption) {
             case itemList[0]:
-                const kmhParaMs = parseFloat(inputValue) / SPEED_CONVERSION_FACTOR;
-                setConversionResult(kmhParaMs.toFixed(2)); // Exibir o resultado com 2 casas decimais
+                if (ValidarPositivo(inputValue) && ValidarNumero(inputValue)) {
+                    const kmhParaMs = parseFloat(inputValue) / SPEED_CONVERSION_FACTOR;
+                    setConversionResult(kmhParaMs.toFixed(2)); // Exibir o resultado com 2 casas decimaiss
+                };
                 break;
             case itemList[1]:
-                const msParaKmh = parseFloat(inputValue) * SPEED_CONVERSION_FACTOR;
-                setConversionResult(msParaKmh.toFixed(2)); // Exibir o resultado com 2 casas decimais
+                if (ValidarPositivo(inputValue) && ValidarNumero(inputValue)) {
+                    const msParaKmh = parseFloat(inputValue) * SPEED_CONVERSION_FACTOR;
+                    setConversionResult(msParaKmh.toFixed(2)); // Exibir o resultado com 2 casas decimais
+                }
                 break;
             default:
                 setConversionResult('');

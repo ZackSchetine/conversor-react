@@ -1,6 +1,8 @@
 import * as React from 'react';
 import DropDown from './DropDown';
 import ConversorDisplay from './ConversorDisplay';
+import './Validacao';
+import { ValidarNumero } from './Validacao';
 
 const itemList = [
   'Celsius para Fahrenheit',
@@ -11,7 +13,7 @@ const itemList = [
 ];
 
 export default function ConvTemperatura() {
-  const [selectedOption, setSelectedOption] = React.useState(itemList[0]); 
+  const [selectedOption, setSelectedOption] = React.useState(itemList[0]);
   const [inputValue, setInputValue] = React.useState('');
   const [conversionResult, setConversionResult] = React.useState('');
 
@@ -24,20 +26,28 @@ export default function ConvTemperatura() {
   const handleConversion = () => {
     switch (selectedOption) {
       case itemList[0]:
-        const celsiusToFahrenheit = (parseFloat(inputValue) * 9 / 5) + 32;
-        setConversionResult(celsiusToFahrenheit.toFixed(2));
+        if (ValidarNumero(inputValue)) {
+          const celsiusToFahrenheit = (parseFloat(inputValue) * 9 / 5) + 32;
+          setConversionResult(celsiusToFahrenheit.toFixed(2));
+        }
         break;
       case itemList[1]:
-        const fahrenheitToCelsius = (parseFloat(inputValue) - 32) * 5 / 9;
-        setConversionResult(fahrenheitToCelsius.toFixed(2));
-        break;
-      case itemList[2]:
-        const celsiusToKelvin = parseFloat(inputValue) + 273.15;
-        setConversionResult(celsiusToKelvin.toFixed(2));
+        if (ValidarNumero(inputValue)) {
+          const fahrenheitToCelsius = (parseFloat(inputValue) - 32) * 5 / 9;
+          setConversionResult(fahrenheitToCelsius.toFixed(2));
+        }
         break;
       case itemList[3]:
-        const kelvinToCelsius = parseFloat(inputValue) - 273.15;
-        setConversionResult(kelvinToCelsius.toFixed(2));
+        if (ValidarNumero(inputValue)) {
+          const celsiusToKelvin = parseFloat(inputValue) + 273.15;
+          setConversionResult(celsiusToKelvin.toFixed(2));
+        }
+        break;
+      case itemList[4]:
+        if (ValidarNumero(inputValue)) {
+          const kelvinToCelsius = parseFloat(inputValue) - 273.15;
+          setConversionResult(kelvinToCelsius.toFixed(2));
+        }
         break;
       default:
         setConversionResult('');
