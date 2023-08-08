@@ -1,7 +1,6 @@
 import * as React from 'react';
 import DropDown from './DropDown';
 import ConversorDisplay from './ConversorDisplay';
-import './Validacao';
 import { ValidarNumero } from './Validacao';
 
 const itemList = [
