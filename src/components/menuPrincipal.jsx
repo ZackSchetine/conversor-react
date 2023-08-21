@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './menu.css';
 
-import ConvTemperatura from './ConversorTemperatura';
+import ConvTemperatura from './conversorTemperatura';
 import ConvVelocidade from './ConversorVelocidade';
 import DropDown from './DropDown';
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './convVelocidade.css';
+import './ConvVelocidade.css';
 
 export default function Display(props) {
     return (
