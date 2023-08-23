@@ -1,5 +1,5 @@
 import * as React from 'react';
-import DropDown from './DropDown';
+import DropDown from './DropDownButton';
 import ConversorDisplay from './ConversorDisplay';
 import { ValidarNumero, ValidarPositivo } from './Validacao';
 

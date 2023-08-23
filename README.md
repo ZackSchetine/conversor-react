@@ -1,4 +1,4 @@
-Resumo das Hard Skills Desenvolvidas:
+## Resumo das Hard Skills Desenvolvidas:
 
 Desenvolvimento em React: O projeto envolve a criação de componentes e a estruturação de uma aplicação web utilizando a biblioteca React.
 
@@ -10,7 +10,7 @@ Renderização Condicional: Utiliza a estrutura de decisão switch para renderiz
 
 Importação e Organização de Componentes: Importa e utiliza componentes como ConvTemperatura, ConvVelocidade e DropDown para compor a funcionalidade da aplicação.
 
-Resumo das Soft Skills Desenvolvidas:
+## Resumo das Soft Skills Desenvolvidas:
 
 Colaboração: projeto foi desenvolvido por duas pessoas, demonstrando habilidades de colaboração e trabalho em equipe.
 
@@ -18,7 +18,7 @@ Resolução de Problemas: A implementação do menu dinâmico usando um switch p
 
 Aprendizado Autônomo: A utilização de hooks do React, como useState, e a criação de lógica para alternar entre componentes refletem a capacidade de aprender novos conceitos por conta própria.
 
-O que o Código Realiza e Como:
+### O que o Código Realiza e Como:
 
 O código implementa um menu de seleção de conversores (temperatura e velocidade) em uma aplicação React. Quando a página é carregada, o usuário é recebido com um título e uma instrução para selecionar uma opção. Uma vez que o usuário faz a seleção, o componente DropDown é usado para exibir as opções disponíveis (Conversor de Velocidade e Conversor de Temperatura).
 

@@ -11,6 +11,7 @@ export default function Display(props) {
                 onChange={(e) => props.setInputValue(e.target.value)}
             />
             <button type="button" onClick={props.handleConversion}>Converter</button>
+            <br />
             {props.conversionResult && (
                 <span className='custom-styled-span'>{props.conversionResult}</span>
             )}
